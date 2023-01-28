@@ -19,7 +19,7 @@ export class FilmController {
   @MessagePattern('create_film')
   async createFilmHandler(
     @Payload() payload: newFilmDTO,
-    @Ctx() context: RmqContext,
+    // @Ctx() context: RmqContext,
   ): Promise<FilmDocumentType> {
     return this.filmService.createFilm(payload);
   }
