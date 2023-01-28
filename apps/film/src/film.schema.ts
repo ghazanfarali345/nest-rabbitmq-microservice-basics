@@ -15,9 +15,6 @@ export class Film {
   release_year: string;
 
   @Prop()
-  age: number;
-
-  @Prop()
   actors: string[];
 }
 
