@@ -11,6 +11,8 @@ import {
 
 import { FilmDocumentType } from './film.schema';
 import { newFilmDTO } from './dtos/new-film.dto';
+import { existingFilmDTO } from './dtos/update-film.dto';
+import { Types } from 'mongoose';
 
 @Controller()
 export class FilmController {
@@ -31,10 +33,10 @@ export class FilmController {
 
   @MessagePattern('film_update')
   async filmUpdateHandler(
-    @Payload() payload: FilmDocumentType,
-    @Ctx() context: RmqContext,
+    @Payload() payload: existingFilmDTO,
+    // @Ctx() context: RmqContext,
   ): Promise<FilmDocumentType> {
-    return this.filmService.updateFilm(payload.id, payload);
+    return this.filmService.updateFilm(payload._id as Types.ObjectId, payload);
   }
 
   @MessagePattern('film_delete')

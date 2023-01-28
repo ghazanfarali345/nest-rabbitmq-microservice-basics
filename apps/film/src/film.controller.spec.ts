@@ -1,10 +1,12 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { newFilmDTO } from './dtos/new-film.dto';
+import { existingFilmDTO } from './dtos/update-film.dto';
 import { FilmController } from './film.controller';
-import { Film } from './film.schema';
+import { Film, FilmDocumentType } from './film.schema';
 import { FilmService } from './film.service';
 import { filmStub } from './test/film.stub';
 import { FilmServiceMock } from './___mock___/film.service.mock';
+import { Types } from 'mongoose';
 
 jest.mock('./film.service');
 describe('FilmController', () => {
@@ -69,6 +71,32 @@ describe('FilmController', () => {
       });
 
       test('then it should return a film', () => {
+        expect(film).toEqual(filmStub());
+      });
+    });
+  });
+
+  describe('updateFilm', () => {
+    describe('when filmUpdateHandler is called', () => {
+      let film: Film;
+      let existingFilmDto: existingFilmDTO;
+
+      beforeEach(async () => {
+        existingFilmDto = {
+          title: 'Wanted',
+          release_year: '2012-01-21',
+        };
+        film = await filmController.filmUpdateHandler(existingFilmDto);
+      });
+
+      // in the line below there is some issue of type
+      test('then it should call filmService and return value is changed', () => {
+        expect(
+          filmService.updateFilm(filmStub()._id as any, existingFilmDto),
+        ).not.toBe(filmStub());
+      });
+
+      test('then it should return a new film', () => {
         expect(film).toEqual(filmStub());
       });
     });

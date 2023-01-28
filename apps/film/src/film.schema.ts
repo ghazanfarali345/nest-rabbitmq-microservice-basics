@@ -9,6 +9,9 @@ export class Film {
   title: string;
 
   @Prop()
+  userId: string;
+
+  @Prop()
   director: string;
 
   @Prop()
