@@ -24,5 +24,6 @@ import { Film, FilmSchema } from './film.schema';
   ],
   controllers: [FilmController],
   providers: [FilmService],
+  exports: [],
 })
 export class FilmModule {}

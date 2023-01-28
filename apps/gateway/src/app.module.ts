@@ -19,7 +19,6 @@ import { FILM_SERVICE, USER_SERVICE } from './constants/constants';
       envFilePath: './apps/gateway/.env',
     }),
     DatabaseModule,
-    // MongooseModule.forFeature([{ name: Order.name, schema: OrderSchema }]),
     RmqModule.register({
       name: FILM_SERVICE,
     }),
