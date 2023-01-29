@@ -1,24 +1,41 @@
-{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+225ms","timestamp":"2023-01-29T12:20:03.821Z"}
-{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T12:20:03.957Z"}
-{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T12:20:03.959Z"}
-{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T12:20:03.960Z"}
-{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+11ms","timestamp":"2023-01-29T12:20:03.976Z"}
-{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T12:20:04.471Z"}
-{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T12:20:04.473Z"}
-{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+3ms","timestamp":"2023-01-29T12:20:04.479Z"}
-{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T12:20:04.481Z"}
-{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T12:20:04.483Z"}
-{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T12:20:04.739Z"}
-{"context":"RoutesResolver","level":"info","message":"AppController {/}:","ms":"+1ms","timestamp":"2023-01-29T12:20:05.425Z"}
-{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","ms":"+0ms","timestamp":"2023-01-29T12:20:05.434Z"}
-{"context":"RouterExplorer","level":"info","message":"Mapped {/film, POST} route","ms":"+0ms","timestamp":"2023-01-29T12:20:05.438Z"}
-{"context":"RouterExplorer","level":"info","message":"Mapped {/film, GET} route","ms":"+2ms","timestamp":"2023-01-29T12:20:05.441Z"}
-{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:id, PUT} route","ms":"+1ms","timestamp":"2023-01-29T12:20:05.447Z"}
-{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:title, DELETE} route","ms":"+1ms","timestamp":"2023-01-29T12:20:05.450Z"}
-{"context":"RouterExplorer","level":"info","message":"Mapped {/user/register, POST} route","ms":"+1ms","timestamp":"2023-01-29T12:20:05.453Z"}
-{"context":"NestApplication","level":"info","message":"Nest application successfully started","ms":"+1ms","timestamp":"2023-01-29T12:20:05.464Z"}
-{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"Avenger"},"level":"info","message":"Film post api","ms":"+1ms","timestamp":"2023-01-29T12:21:35.227Z"}
-{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"Avenger"},"level":"info","message":"Film post api","ms":"+0ms","timestamp":"2023-01-29T12:37:11.820Z"}
-{"context":{},"level":"info","message":"Film create api res","ms":"+1ms","timestamp":"2023-01-29T12:37:11.821Z"}
-{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+1ms","stack":["ClientProxy"],"timestamp":"2023-01-29T12:39:04.434Z"}
-{"err":{"code":320},"level":"error","ms":"+0ms","stack":["ClientProxy"],"timestamp":"2023-01-29T12:39:04.441Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+44ms","timestamp":"2023-01-29T13:07:17.331Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T13:07:17.412Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+3ms","timestamp":"2023-01-29T13:07:17.416Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T13:07:17.419Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T13:07:17.421Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T13:07:17.552Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T13:07:17.554Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T13:07:17.557Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-29T13:07:17.560Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-29T13:07:17.564Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+51ms","timestamp":"2023-01-29T13:07:27.739Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T13:07:27.790Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-29T13:07:27.793Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-29T13:07:27.796Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T13:07:27.798Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T13:07:27.904Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-29T13:07:27.907Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-29T13:07:27.912Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T13:07:27.914Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T13:07:27.916Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+161ms","timestamp":"2023-01-29T13:08:17.583Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T13:08:17.713Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-29T13:08:17.716Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T13:08:17.719Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-29T13:08:17.726Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T13:08:18.087Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T13:08:18.088Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T13:08:18.089Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T13:08:18.090Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T13:08:18.101Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+8ms","timestamp":"2023-01-29T13:08:18.496Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","ms":"+1ms","timestamp":"2023-01-29T13:08:19.362Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","ms":"+0ms","timestamp":"2023-01-29T13:08:19.373Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, POST} route","ms":"+0ms","timestamp":"2023-01-29T13:08:19.375Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, GET} route","ms":"+2ms","timestamp":"2023-01-29T13:08:19.379Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:id, PUT} route","ms":"+1ms","timestamp":"2023-01-29T13:08:19.384Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:title, DELETE} route","ms":"+0ms","timestamp":"2023-01-29T13:08:19.387Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/user/register, POST} route","ms":"+1ms","timestamp":"2023-01-29T13:08:19.389Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","ms":"+0ms","timestamp":"2023-01-29T13:08:19.399Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"Avenger"},"level":"info","message":"Film post api","ms":"+1ms","timestamp":"2023-01-29T14:12:40.743Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"Avenger"},"level":"info","message":"create film request in gateway service","ms":"+1ms","timestamp":"2023-01-29T14:12:40.745Z"}

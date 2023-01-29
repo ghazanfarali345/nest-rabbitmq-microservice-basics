@@ -22,15 +22,18 @@ export class AppController {
     return this.appService.getHello();
   }
 
-  // Film routes
+  /**
+   * Create Film
+   * @body {object} - Film body
+   */
 
   @Post('/film')
   createFilmHandler(@Body() body: any) {
     this.logger.log('Film post api', body);
-    let res = this.appService.createFilm(body);
-    return res;
+    return this.appService.createFilm(body);
   }
 
+  // Get Film list
   @Get('/film')
   getFilmListHandler() {
     let res = this.appService.getFilmList();
@@ -38,20 +41,37 @@ export class AppController {
     return res;
   }
 
+  /**
+   * Update Film by id
+   * @body {object} - fileds for update
+   * @param {ObjectId} - film id for update
+   */
   @Put('/film/:id')
   filmUpdateHandler(@Body() body: any, @Param() id: string) {
+    this.logger.log('film list api', body, id);
+
     return this.appService.filmUpdate(id, body);
   }
+
+  /**
+   * Delete film by title
+   * @param {string} title  - title of film
+   *
+   */
 
   @Delete('/film/:title')
   deleteHandler(@Param() title: string) {
     return this.appService.filmDelete(title);
   }
 
-  // User routes
+  /**
+   * Create User
+   * @body { request object} - User body
+   */
 
   @Post('/user/register')
   createUserHandler(@Body() body: any) {
+    this.logger.log('create user', body);
     return this.appService.createUser(body);
   }
 }

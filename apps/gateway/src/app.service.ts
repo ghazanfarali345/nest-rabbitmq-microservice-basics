@@ -7,7 +7,7 @@ export class AppService {
   constructor(
     @Inject(FILM_SERVICE) private filmClient: ClientProxy,
     @Inject(USER_SERVICE) private userClient: ClientProxy,
-    private logger = new Logger(AppService.name),
+    private readonly logger: Logger,
   ) {}
 
   getHello() {

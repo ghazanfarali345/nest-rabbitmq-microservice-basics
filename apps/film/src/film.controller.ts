@@ -40,7 +40,7 @@ export class FilmController {
     @Payload() payload: existingFilmDTO,
     // @Ctx() context: RmqContext,
   ): Promise<FilmDocumentType> {
-    this.logger.log('update fulm', payload);
+    this.logger.log('update film', payload);
 
     return this.filmService.updateFilm(payload._id as Types.ObjectId, payload);
   }
