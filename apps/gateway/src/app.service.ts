@@ -7,9 +7,8 @@ export class AppService {
   constructor(
     @Inject(FILM_SERVICE) private filmClient: ClientProxy,
     @Inject(USER_SERVICE) private userClient: ClientProxy,
+    private logger = new Logger(AppService.name),
   ) {}
-
-  private logger = new Logger(AppService.name);
 
   getHello() {
     return 'hello ';
@@ -17,6 +16,8 @@ export class AppService {
 
   // Film Services
   async createFilm(request) {
+    this.logger.log('create film request in gateway service', request);
+
     return this.filmClient.send('create_film', { ...request });
   }
 

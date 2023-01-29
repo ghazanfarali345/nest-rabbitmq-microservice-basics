@@ -6,12 +6,16 @@ import {
   Param,
   Put,
   Delete,
+  Logger,
 } from '@nestjs/common';
 import { AppService } from './app.service';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
+  constructor(
+    private readonly appService: AppService,
+    private readonly logger: Logger,
+  ) {}
 
   @Get()
   getHello() {
@@ -22,12 +26,16 @@ export class AppController {
 
   @Post('/film')
   createFilmHandler(@Body() body: any) {
-    return this.appService.createFilm(body);
+    this.logger.log('Film post api', body);
+    let res = this.appService.createFilm(body);
+    return res;
   }
 
   @Get('/film')
   getFilmListHandler() {
-    return this.appService.getFilmList();
+    let res = this.appService.getFilmList();
+    this.logger.log('film list api', res);
+    return res;
   }
 
   @Put('/film/:id')
