@@ -21,6 +21,11 @@ export class FilmController {
     private logger: Logger,
   ) {}
 
+  /**
+   * create film event listner
+   * Recives payload and sent back the response
+   */
+
   @MessagePattern('create_film')
   async createFilmHandler(
     @Payload() payload: newFilmDTO,
@@ -30,10 +35,19 @@ export class FilmController {
     return this.filmService.createFilm(payload);
   }
 
+  /**
+   * film list event listner
+   * sends response
+   */
   @MessagePattern('film_list')
   async getFilmListHandler(): Promise<FilmDocumentType[]> {
     return this.filmService.getAllFilms();
   }
+
+  /**
+   * update film event listner
+   * Recieves payload for update film and sent back the response
+   */
 
   @MessagePattern('film_update')
   async filmUpdateHandler(
@@ -44,6 +58,10 @@ export class FilmController {
 
     return this.filmService.updateFilm(payload._id as Types.ObjectId, payload);
   }
+
+  /**
+   * delete film event listner
+   */
 
   @MessagePattern('film_delete')
   async filmDeleteHandler(
