@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body } from '@nestjs/common';
+import { Controller, Get, Post, Body, Logger } from '@nestjs/common';
 import { FilmService } from './film.service';
 
 import {
@@ -16,13 +16,17 @@ import { Types } from 'mongoose';
 
 @Controller()
 export class FilmController {
-  constructor(private readonly filmService: FilmService) {}
+  constructor(
+    private readonly filmService: FilmService,
+    private logger: Logger,
+  ) {}
 
   @MessagePattern('create_film')
   async createFilmHandler(
     @Payload() payload: newFilmDTO,
     // @Ctx() context: RmqContext,
   ): Promise<FilmDocumentType> {
+    this.logger.log('info', payload);
     return this.filmService.createFilm(payload);
   }
 

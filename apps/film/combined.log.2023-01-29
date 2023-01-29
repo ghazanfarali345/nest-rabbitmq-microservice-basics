@@ -1,0 +1,15 @@
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+2ms","stack":["Server"],"timestamp":"2023-01-29T11:35:28.332Z"}
+{"err":{"code":320},"level":"error","ms":"+0ms","stack":["Server"],"timestamp":"2023-01-29T11:35:28.337Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+149ms","timestamp":"2023-01-29T11:35:57.120Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T11:35:57.233Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T11:35:57.234Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T11:35:57.236Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T11:35:57.237Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T11:35:57.259Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T11:35:57.555Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-29T11:35:57.596Z"}
+{"context":"InstanceLoader","level":"info","message":"FilmModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-29T11:35:57.599Z"}
+{"context":"NestMicroservice","level":"info","message":"Nest microservice successfully started","ms":"+1ms","timestamp":"2023-01-29T11:35:57.920Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"Avenger"},"level":"info","message":"info","ms":"+0ms","timestamp":"2023-01-29T11:38:48.535Z"}
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+1ms","stack":["Server"],"timestamp":"2023-01-29T11:39:48.048Z"}
+{"err":{"code":320},"level":"error","ms":"+1ms","stack":["Server"],"timestamp":"2023-01-29T11:39:48.049Z"}

@@ -1,0 +1,23 @@
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+4ms","stack":["ClientProxy"],"timestamp":"2023-01-29T11:35:28.479Z"}
+{"err":{"code":320},"level":"error","ms":"+1ms","stack":["ClientProxy"],"timestamp":"2023-01-29T11:35:28.485Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+134ms","timestamp":"2023-01-29T11:35:56.917Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T11:35:57.059Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T11:35:57.064Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T11:35:57.066Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T11:35:57.068Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T11:35:57.350Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T11:35:57.354Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T11:35:57.355Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T11:35:57.356Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-29T11:35:57.359Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-29T11:35:57.733Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","ms":"+1ms","timestamp":"2023-01-29T11:35:58.373Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","ms":"+1ms","timestamp":"2023-01-29T11:35:58.384Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, POST} route","ms":"+1ms","timestamp":"2023-01-29T11:35:58.387Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, GET} route","ms":"+2ms","timestamp":"2023-01-29T11:35:58.390Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:id, PUT} route","ms":"+2ms","timestamp":"2023-01-29T11:35:58.394Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:title, DELETE} route","ms":"+11ms","timestamp":"2023-01-29T11:35:58.407Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/user/register, POST} route","ms":"+0ms","timestamp":"2023-01-29T11:35:58.408Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","ms":"+1ms","timestamp":"2023-01-29T11:35:58.422Z"}
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+1ms","stack":["ClientProxy"],"timestamp":"2023-01-29T11:39:48.076Z"}
+{"err":{"code":320},"level":"error","ms":"+0ms","stack":["ClientProxy"],"timestamp":"2023-01-29T11:39:48.078Z"}

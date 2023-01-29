@@ -4,10 +4,50 @@ import { NestFactory } from '@nestjs/core';
 import { Transport } from '@nestjs/microservices';
 import { FilmModule } from './film.module';
 
-const logger = new Logger();
+import * as winston from 'winston';
+import {
+  WinstonModule,
+  utilities as nestWinstonModuleUtilities,
+} from 'nest-winston';
+
+import * as DailyRotateFile from 'winston-daily-rotate-file';
 
 async function bootstrap() {
-  const app = await NestFactory.create(FilmModule);
+  const instance = winston.createLogger({
+    // options of Winston
+    transports: [
+      new winston.transports.Console({
+        format: winston.format.combine(
+          winston.format.timestamp(),
+          winston.format.ms(),
+          nestWinstonModuleUtilities.format.nestLike('MyFilmApp', {
+            // options
+            colors: true,
+          }),
+        ),
+      }),
+      new DailyRotateFile({
+        dirname: './apps/film',
+        filename: 'combined.log',
+        datePattern: 'YYYY-MM-DD',
+        zippedArchive: true,
+        maxSize: '20m',
+        maxFiles: '14d',
+
+        format: winston.format.combine(
+          winston.format.timestamp(),
+          winston.format.ms(),
+          winston.format.json(),
+        ),
+      }),
+    ],
+  });
+
+  const app = await NestFactory.create(FilmModule, {
+    logger: WinstonModule.createLogger({
+      instance,
+    }),
+  });
   const rmqService = app.get<RmqService>(RmqService);
   app.connectMicroservice(rmqService.getOptions('FILM'));
   await app.startAllMicroservices();

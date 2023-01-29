@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "apps\\film\\.d91176edf949fb13faa37b367e567ef02e94488d-audit.json",
+    "files": [
+        {
+            "date": 1674987847618,
+            "name": "apps\\film\\combined.log.2023-01-29",
+            "hash": "a78156fdbcecf576a17fa287835f1ce7ee487157767fbb064135f13b5643a197"
+        }
+    ],
+    "hashType": "sha256"
+}

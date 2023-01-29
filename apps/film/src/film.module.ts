@@ -1,4 +1,4 @@
-import { Module } from '@nestjs/common';
+import { Module, Logger } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { FilmController } from './film.controller';
 import { FilmService } from './film.service';
@@ -23,7 +23,7 @@ import { Film, FilmSchema } from './film.schema';
     MongooseModule.forFeature([{ name: Film.name, schema: FilmSchema }]),
   ],
   controllers: [FilmController],
-  providers: [FilmService],
+  providers: [FilmService, Logger],
   exports: [],
 })
 export class FilmModule {}
