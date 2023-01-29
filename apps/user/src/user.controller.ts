@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Logger } from '@nestjs/common';
 import {
   Ctx,
   MessagePattern,
@@ -13,18 +13,29 @@ import { UserService } from './user.service';
 
 @Controller()
 export class UserController {
-  constructor(private readonly userService: UserService) {}
+  constructor(
+    private readonly userService: UserService,
+    private readonly logger: Logger,
+  ) {}
 
   @Get()
   getHello(): string {
     return this.userService.getHello();
   }
 
+  /**
+   * Create user listner
+   * @param payload - the body of user
+   * @param context - rmq context
+   * @returns
+   */
+
   @MessagePattern('create_user')
   async createUserHandler(
     @Payload() payload: NewUserDTO,
     @Ctx() context: RmqContext,
   ): Promise<UserDocumentType | UserDetails | string> {
+    this.logger.log('create user listner', payload);
     return this.userService.registerUser(payload);
   }
 }
