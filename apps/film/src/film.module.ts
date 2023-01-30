@@ -28,10 +28,10 @@ import { APP_INTERCEPTOR } from '@nestjs/core';
   providers: [
     FilmService,
     Logger,
-    // {
-    //   provide: APP_INTERCEPTOR,
-    //   useClass: AspectLogger,
-    // },
+    {
+      provide: APP_INTERCEPTOR,
+      useClass: AspectLogger,
+    },
   ],
   exports: [],
 })

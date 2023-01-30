@@ -7,6 +7,7 @@ import { FilmService } from './film.service';
 import { filmStub } from './test/film.stub';
 import { FilmServiceMock } from './___mock___/film.service.mock';
 import { Types } from 'mongoose';
+import { Logger } from '@nestjs/common';
 
 jest.mock('./film.service');
 describe('FilmController', () => {
@@ -19,6 +20,7 @@ describe('FilmController', () => {
       controllers: [FilmController],
       providers: [
         FilmService,
+        Logger,
         { provide: FilmService, useValue: FilmServiceMock() },
       ],
     }).compile();

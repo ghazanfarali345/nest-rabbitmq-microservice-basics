@@ -52,7 +52,7 @@ async function bootstrap() {
   const rmqService = app.get<RmqService>(RmqService);
   app.connectMicroservice(rmqService.getOptions('FILM'));
   app.useGlobalPipes(new ValidationPipe());
-  // app.useGlobalInterceptors(new AspectLogger());
+  app.useGlobalInterceptors(new AspectLogger());
 
   await app.startAllMicroservices();
 }

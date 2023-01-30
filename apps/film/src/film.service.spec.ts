@@ -4,6 +4,7 @@ import { Film } from './film.schema';
 import { FilmService } from './film.service';
 import { filmStub } from './test/film.stub';
 import { filmMockModel } from './test/film.model.mock';
+import { Logger } from '@nestjs/common';
 
 describe('FilmService', () => {
   let filmService: FilmService;
@@ -15,6 +16,7 @@ describe('FilmService', () => {
       const moduleRef = await Test.createTestingModule({
         providers: [
           FilmService,
+          Logger,
           {
             provide: getModelToken(Film.name),
             useClass: filmMockModel,
