@@ -1,0 +1,165 @@
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+122ms","timestamp":"2023-01-30T08:23:24.177Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-30T08:23:24.253Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T08:23:24.256Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+6ms","timestamp":"2023-01-30T08:23:24.263Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+11ms","timestamp":"2023-01-30T08:23:24.277Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-30T08:23:25.382Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-30T08:23:25.385Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T08:23:25.387Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T08:23:25.388Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-30T08:23:25.393Z"}
+{"context":"MongooseModule","level":"error","message":"Unable to connect to the database. Retrying (1)...","ms":"+4ms","stack":[""],"timestamp":"2023-01-30T08:23:55.394Z"}
+{"context":"MongooseModule","level":"error","message":"Unable to connect to the database. Retrying (2)...","ms":"+0ms","stack":[""],"timestamp":"2023-01-30T08:24:28.432Z"}
+{"context":"MongooseModule","level":"error","message":"Unable to connect to the database. Retrying (3)...","ms":"+1ms","stack":[""],"timestamp":"2023-01-30T08:25:01.446Z"}
+{"context":"MongooseModule","level":"error","message":"Unable to connect to the database. Retrying (4)...","ms":"+0ms","stack":[""],"timestamp":"2023-01-30T08:25:34.471Z"}
+{"context":"MongooseModule","level":"error","message":"Unable to connect to the database. Retrying (5)...","ms":"+2ms","stack":[""],"timestamp":"2023-01-30T08:26:07.495Z"}
+{"context":"MongooseModule","level":"error","message":"Unable to connect to the database. Retrying (6)...","ms":"+1ms","stack":[""],"timestamp":"2023-01-30T08:26:40.516Z"}
+{"context":"MongooseModule","level":"error","message":"Unable to connect to the database. Retrying (7)...","ms":"+1ms","stack":[""],"timestamp":"2023-01-30T08:27:13.544Z"}
+{"context":"MongooseModule","level":"error","message":"Unable to connect to the database. Retrying (8)...","ms":"+1ms","stack":[""],"timestamp":"2023-01-30T08:27:46.556Z"}
+{"context":"MongooseModule","level":"error","message":"Unable to connect to the database. Retrying (9)...","ms":"+1ms","stack":[""],"timestamp":"2023-01-30T08:28:19.589Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+265ms","timestamp":"2023-01-30T08:34:31.527Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+18ms","timestamp":"2023-01-30T08:34:31.755Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T08:34:31.759Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T08:34:31.767Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T08:34:31.769Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T08:34:32.061Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T08:34:32.062Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T08:34:32.064Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T08:34:32.065Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","ms":"+12ms","timestamp":"2023-01-30T08:34:32.082Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T08:34:32.442Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","ms":"+0ms","timestamp":"2023-01-30T08:34:33.355Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","ms":"+1ms","timestamp":"2023-01-30T08:34:33.371Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, POST} route","ms":"+0ms","timestamp":"2023-01-30T08:34:33.373Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, GET} route","ms":"+1ms","timestamp":"2023-01-30T08:34:33.387Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:id, PUT} route","ms":"+0ms","timestamp":"2023-01-30T08:34:33.389Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:title, DELETE} route","ms":"+0ms","timestamp":"2023-01-30T08:34:33.391Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/user/register, POST} route","ms":"+1ms","timestamp":"2023-01-30T08:34:33.393Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","ms":"+0ms","timestamp":"2023-01-30T08:34:33.412Z"}
+{"context":{"age":23,"email":"ghazanfaralli345@yopmail.com","location":"karachi","name":"ghazanfar","password":"password"},"level":"info","message":"create user","ms":"+1ms","timestamp":"2023-01-30T09:08:31.980Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"Avenger"},"level":"info","message":"Film post api","ms":"+1ms","timestamp":"2023-01-30T09:08:42.521Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"Avenger"},"level":"info","message":"create film request in gateway service","ms":"+1ms","timestamp":"2023-01-30T09:08:42.522Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":1},"level":"info","message":"Film post api","ms":"+0ms","timestamp":"2023-01-30T09:08:51.958Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":1},"level":"info","message":"create film request in gateway service","ms":"+0ms","timestamp":"2023-01-30T09:08:51.959Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"Film post api","ms":"+4ms","timestamp":"2023-01-30T09:09:29.016Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"create film request in gateway service","ms":"+0ms","timestamp":"2023-01-30T09:09:29.017Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"Film post api","ms":"+0ms","timestamp":"2023-01-30T09:12:23.230Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"create film request in gateway service","ms":"+0ms","timestamp":"2023-01-30T09:12:23.231Z"}
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+0ms","stack":["ClientProxy"],"timestamp":"2023-01-30T09:12:26.202Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+133ms","timestamp":"2023-01-30T09:13:28.545Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T09:13:28.651Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T09:13:28.652Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T09:13:28.654Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-30T09:13:28.657Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T09:13:28.839Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T09:13:28.852Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T09:13:28.853Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T09:13:28.856Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T09:13:28.858Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+5ms","timestamp":"2023-01-30T09:13:29.592Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","ms":"+0ms","timestamp":"2023-01-30T09:13:30.474Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","ms":"+13ms","timestamp":"2023-01-30T09:13:30.509Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, POST} route","ms":"+7ms","timestamp":"2023-01-30T09:13:30.523Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, GET} route","ms":"+4ms","timestamp":"2023-01-30T09:13:30.544Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:id, PUT} route","ms":"+16ms","timestamp":"2023-01-30T09:13:30.564Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:title, DELETE} route","ms":"+1ms","timestamp":"2023-01-30T09:13:30.568Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/user/register, POST} route","ms":"+1ms","timestamp":"2023-01-30T09:13:30.570Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","ms":"+1ms","timestamp":"2023-01-30T09:13:30.589Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"Film post api","ms":"+4ms","timestamp":"2023-01-30T09:56:25.428Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"create film request in gateway service","ms":"+2ms","timestamp":"2023-01-30T09:56:25.433Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"Film post api","ms":"+1ms","timestamp":"2023-01-30T09:59:31.615Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"create film request in gateway service","ms":"+0ms","timestamp":"2023-01-30T09:59:31.616Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+150ms","timestamp":"2023-01-30T10:00:26.542Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T10:00:26.719Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T10:00:26.735Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T10:00:26.748Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T10:00:26.750Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T10:00:26.996Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T10:00:26.998Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T10:00:26.999Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T10:00:27.022Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T10:00:27.024Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T10:00:27.340Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","ms":"+0ms","timestamp":"2023-01-30T10:00:28.449Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","ms":"+8ms","timestamp":"2023-01-30T10:00:28.481Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, POST} route","ms":"+1ms","timestamp":"2023-01-30T10:00:28.484Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, GET} route","ms":"+0ms","timestamp":"2023-01-30T10:00:28.487Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:id, PUT} route","ms":"+0ms","timestamp":"2023-01-30T10:00:28.490Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:title, DELETE} route","ms":"+9ms","timestamp":"2023-01-30T10:00:28.501Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/user/register, POST} route","ms":"+0ms","timestamp":"2023-01-30T10:00:28.502Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","ms":"+1ms","timestamp":"2023-01-30T10:00:28.521Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"Film post api","ms":"+0ms","timestamp":"2023-01-30T10:02:25.189Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"create film request in gateway service","ms":"+1ms","timestamp":"2023-01-30T10:02:25.191Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"Film post api","ms":"+1ms","timestamp":"2023-01-30T10:06:22.034Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"create film request in gateway service","ms":"+1ms","timestamp":"2023-01-30T10:06:22.035Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"Film post api","ms":"+0ms","timestamp":"2023-01-30T10:06:23.994Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"create film request in gateway service","ms":"+1ms","timestamp":"2023-01-30T10:06:23.995Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"Film post api","ms":"+1ms","timestamp":"2023-01-30T10:06:26.185Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":""},"level":"info","message":"create film request in gateway service","ms":"+0ms","timestamp":"2023-01-30T10:06:26.185Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"Film post api","ms":"+0ms","timestamp":"2023-01-30T10:06:42.059Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"create film request in gateway service","ms":"+1ms","timestamp":"2023-01-30T10:06:42.060Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"Film post api","ms":"+0ms","timestamp":"2023-01-30T10:08:23.033Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"create film request in gateway service","ms":"+0ms","timestamp":"2023-01-30T10:08:23.034Z"}
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+1ms","stack":["ClientProxy"],"timestamp":"2023-01-30T10:08:39.642Z"}
+{"err":{"code":320},"level":"error","ms":"+1ms","stack":["ClientProxy"],"timestamp":"2023-01-30T10:08:39.643Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+62ms","timestamp":"2023-01-30T10:09:41.276Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T10:09:41.415Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T10:09:41.417Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T10:09:41.419Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T10:09:41.466Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T10:09:41.664Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T10:09:41.666Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T10:09:41.668Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T10:09:41.669Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T10:09:41.677Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T10:09:42.010Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","ms":"+6ms","timestamp":"2023-01-30T10:09:43.116Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","ms":"+1ms","timestamp":"2023-01-30T10:09:43.127Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, POST} route","ms":"+2ms","timestamp":"2023-01-30T10:09:43.135Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, GET} route","ms":"+0ms","timestamp":"2023-01-30T10:09:43.140Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:id, PUT} route","ms":"+1ms","timestamp":"2023-01-30T10:09:43.143Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:title, DELETE} route","ms":"+1ms","timestamp":"2023-01-30T10:09:43.145Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/user/register, POST} route","ms":"+0ms","timestamp":"2023-01-30T10:09:43.148Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","ms":"+0ms","timestamp":"2023-01-30T10:09:43.174Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"Film post api","ms":"+1ms","timestamp":"2023-01-30T10:12:20.521Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"create film request in gateway service","ms":"+0ms","timestamp":"2023-01-30T10:12:20.522Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"Film post api","ms":"+1ms","timestamp":"2023-01-30T10:19:43.257Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"create film request in gateway service","ms":"+0ms","timestamp":"2023-01-30T10:19:43.257Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"Film post api","ms":"+0ms","timestamp":"2023-01-30T10:29:54.702Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"create film request in gateway service","ms":"+1ms","timestamp":"2023-01-30T10:29:54.703Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"Film post api","ms":"+1ms","timestamp":"2023-01-30T10:37:45.350Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"create film request in gateway service","ms":"+1ms","timestamp":"2023-01-30T10:37:45.351Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"Film post api","ms":"+0ms","timestamp":"2023-01-30T10:39:09.847Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"create film request in gateway service","ms":"+0ms","timestamp":"2023-01-30T10:39:09.848Z"}
+{"context":{"age":24,"email":"user2@yopmail.com","location":"karachi","name":"Ghazanfar ali","password":"password"},"level":"info","message":"create user","ms":"+1ms","timestamp":"2023-01-30T10:49:36.628Z"}
+{"context":{"age":24,"email":"user2@yopmail.com","location":"karachi","name":"Ghazanfar ali","password":"password"},"level":"info","message":"create user","ms":"+0ms","timestamp":"2023-01-30T10:49:39.720Z"}
+{"context":{"age":24,"email":"user2@yopmail.com","location":"karachi","password":"password"},"level":"info","message":"create user","ms":"+0ms","timestamp":"2023-01-30T10:49:45.099Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+133ms","timestamp":"2023-01-30T11:16:42.836Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T11:16:42.958Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-30T11:16:42.963Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T11:16:42.968Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T11:16:42.972Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T11:16:43.166Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T11:16:43.168Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T11:16:43.171Z"}
+{"context":"InstanceLoader","level":"info","message":"ClientsModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T11:16:43.177Z"}
+{"context":"InstanceLoader","level":"info","message":"AppModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T11:16:43.181Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T11:16:43.455Z"}
+{"context":"RoutesResolver","level":"info","message":"AppController {/}:","ms":"+1ms","timestamp":"2023-01-30T11:16:44.116Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/, GET} route","ms":"+1ms","timestamp":"2023-01-30T11:16:44.127Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, POST} route","ms":"+1ms","timestamp":"2023-01-30T11:16:44.135Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film, GET} route","ms":"+0ms","timestamp":"2023-01-30T11:16:44.137Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:id, PUT} route","ms":"+0ms","timestamp":"2023-01-30T11:16:44.140Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/film/:title, DELETE} route","ms":"+1ms","timestamp":"2023-01-30T11:16:44.143Z"}
+{"context":"RouterExplorer","level":"info","message":"Mapped {/user/register, POST} route","ms":"+5ms","timestamp":"2023-01-30T11:16:44.150Z"}
+{"context":"NestApplication","level":"info","message":"Nest application successfully started","ms":"+1ms","timestamp":"2023-01-30T11:16:44.162Z"}
+{"context":{"age":24,"email":"user2@yopmail.com","location":"karachi","password":"password"},"level":"info","message":"create user","ms":"+1ms","timestamp":"2023-01-30T11:18:26.909Z"}
+{"context":{"age":24,"email":"user2@yopmail.com","location":"karachi","password":"password"},"level":"info","message":"create user","ms":"+0ms","timestamp":"2023-01-30T11:18:26.910Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"Film post api","ms":"+0ms","timestamp":"2023-01-30T11:18:32.376Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"create film request in gateway service","ms":"+0ms","timestamp":"2023-01-30T11:18:32.377Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"Film post api","ms":"+0ms","timestamp":"2023-01-30T11:18:35.301Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":null},"level":"info","message":"create film request in gateway service","ms":"+0ms","timestamp":"2023-01-30T11:18:35.302Z"}
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+0ms","stack":["ClientProxy"],"timestamp":"2023-01-30T11:19:12.030Z"}
+{"err":{"code":320},"level":"error","ms":"+1ms","stack":["ClientProxy"],"timestamp":"2023-01-30T11:19:12.034Z"}
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+1ms","stack":["ClientProxy"],"timestamp":"2023-01-30T11:19:12.046Z"}
+{"err":{"code":320},"level":"error","ms":"+2ms","stack":["ClientProxy"],"timestamp":"2023-01-30T11:19:12.052Z"}

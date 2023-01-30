@@ -1,5 +1,5 @@
 import { RmqService } from '@app/common';
-import { Logger } from '@nestjs/common';
+import { Logger, ValidationPipe } from '@nestjs/common';
 import { NestFactory } from '@nestjs/core';
 import { Transport } from '@nestjs/microservices';
 import { FilmModule } from './film.module';
@@ -50,6 +50,7 @@ async function bootstrap() {
   });
   const rmqService = app.get<RmqService>(RmqService);
   app.connectMicroservice(rmqService.getOptions('FILM'));
+  app.useGlobalPipes(new ValidationPipe());
   await app.startAllMicroservices();
 }
 bootstrap();

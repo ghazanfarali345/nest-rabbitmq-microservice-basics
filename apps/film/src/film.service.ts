@@ -17,15 +17,25 @@ export class FilmService {
    */
 
   async createFilm(data: newFilmDTO): Promise<FilmDocumentType> {
-    let film = await this.filmModel.create({ ...data });
-    return film;
+    try {
+      this.logger.log('create film', data);
+      let film = await this.filmModel.create({ ...data });
+      return film;
+    } catch (error) {
+      this.logger.error('create film error', error);
+    }
   }
 
   /**
    * Film list service
    */
   async getAllFilms(): Promise<FilmDocumentType[]> {
-    return await this.filmModel.find();
+    try {
+      this.logger.log('film list');
+      return await this.filmModel.find();
+    } catch (error) {
+      this.logger.error('film list error', error);
+    }
   }
 
   /**
@@ -36,12 +46,17 @@ export class FilmService {
     _id: Types.ObjectId,
     data: existingFilmDTO,
   ): Promise<FilmDocumentType> {
-    let film = await this.filmModel.findByIdAndUpdate(
-      { _id: _id.id },
-      { ...data },
-      { new: true },
-    );
-    return film;
+    try {
+      this.logger.log('update film ', data, _id);
+      let film = await this.filmModel.findByIdAndUpdate(
+        { _id: _id.id },
+        { ...data },
+        { new: true },
+      );
+      return film;
+    } catch (error) {
+      this.logger.error('update film error', error);
+    }
   }
 
   /**
@@ -49,7 +64,12 @@ export class FilmService {
    */
 
   async deleteFilm(title): Promise<FilmDocumentType> {
-    let film = await this.filmModel.findOneAndDelete({ ...title });
-    return film;
+    try {
+      this.logger.log('delete film,', title);
+      let film = await this.filmModel.findOneAndDelete({ ...title });
+      return film;
+    } catch (error) {
+      this.logger.error('delete film', error);
+    }
   }
 }
