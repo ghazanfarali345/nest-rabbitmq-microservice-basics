@@ -1,4 +1,4 @@
-import { ValidationPipe } from '@nestjs/common';
+import { Logger, ValidationPipe } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
@@ -10,6 +10,7 @@ import {
 } from 'nest-winston';
 
 import * as DailyRotateFile from 'winston-daily-rotate-file';
+import { AspectLogger } from './interceptors/logging.interceptor';
 
 async function bootstrap() {
   const instance = winston.createLogger({
@@ -48,6 +49,7 @@ async function bootstrap() {
     }),
   });
   app.useGlobalPipes(new ValidationPipe());
+  app.useGlobalInterceptors(new AspectLogger());
   const configService = app.get(ConfigService);
   await app.listen(configService.get('PORT'));
 }

@@ -7,6 +7,8 @@ import * as Joi from 'joi';
 import { DatabaseModule, RmqModule } from '@app/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { FILM_SERVICE, USER_SERVICE } from './constants/constants';
+import { APP_INTERCEPTOR } from '@nestjs/core';
+import { AspectLogger } from './interceptors/logging.interceptor';
 
 @Module({
   imports: [
@@ -27,6 +29,13 @@ import { FILM_SERVICE, USER_SERVICE } from './constants/constants';
     }),
   ],
   controllers: [AppController],
-  providers: [AppService, Logger],
+  providers: [
+    AppService,
+    Logger,
+    {
+      provide: APP_INTERCEPTOR,
+      useClass: AspectLogger,
+    },
+  ],
 })
 export class AppModule {}

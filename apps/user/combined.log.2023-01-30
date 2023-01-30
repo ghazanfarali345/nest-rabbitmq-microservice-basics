@@ -61,3 +61,49 @@
 {"context":{"age":24,"email":"user2@yopmail.com","location":"karachi","password":"password"},"level":"info","message":"create user listner","ms":"+1ms","timestamp":"2023-01-30T11:18:27.018Z"}
 {"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+0ms","stack":["Server"],"timestamp":"2023-01-30T11:19:12.022Z"}
 {"err":{"code":320},"level":"error","ms":"+3ms","stack":["Server"],"timestamp":"2023-01-30T11:19:12.027Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+93ms","timestamp":"2023-01-30T11:46:52.733Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T11:46:52.799Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T11:46:52.800Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T11:46:52.808Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+12ms","timestamp":"2023-01-30T11:46:52.812Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T11:46:52.826Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T11:46:53.227Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T11:46:53.254Z"}
+{"context":"InstanceLoader","level":"info","message":"UserModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T11:46:53.256Z"}
+{"context":"NestMicroservice","level":"info","message":"Nest microservice successfully started","ms":"+1ms","timestamp":"2023-01-30T11:46:53.454Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+104ms","timestamp":"2023-01-30T13:53:02.348Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T13:53:02.461Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T13:53:02.462Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T13:53:02.472Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T13:53:02.482Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T13:53:02.491Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T13:53:02.947Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-30T13:53:02.996Z"}
+{"context":"InstanceLoader","level":"info","message":"UserModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T13:53:03.019Z"}
+{"context":"NestMicroservice","level":"info","message":"Nest microservice successfully started","ms":"+2ms","timestamp":"2023-01-30T13:53:03.246Z"}
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+2ms","stack":["Server"],"timestamp":"2023-01-30T14:30:01.481Z"}
+{"err":{"code":320},"level":"error","ms":"+1ms","stack":["Server"],"timestamp":"2023-01-30T14:30:01.493Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+65ms","timestamp":"2023-01-30T14:30:31.405Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T14:30:31.518Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T14:30:31.523Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T14:30:31.533Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T14:30:31.535Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-30T14:30:31.540Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+9ms","timestamp":"2023-01-30T14:30:31.997Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+3ms","timestamp":"2023-01-30T14:30:32.050Z"}
+{"context":"InstanceLoader","level":"info","message":"UserModule dependencies initialized","ms":"+3ms","timestamp":"2023-01-30T14:30:32.054Z"}
+{"context":"NestMicroservice","level":"info","message":"Nest microservice successfully started","ms":"+0ms","timestamp":"2023-01-30T14:30:32.298Z"}
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+1ms","stack":["Server"],"timestamp":"2023-01-30T14:48:27.877Z"}
+{"err":{"code":320},"level":"error","ms":"+1ms","stack":["Server"],"timestamp":"2023-01-30T14:48:27.881Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+132ms","timestamp":"2023-01-30T14:49:40.183Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+4ms","timestamp":"2023-01-30T14:49:40.332Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T14:49:40.336Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-30T14:49:40.342Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+2ms","timestamp":"2023-01-30T14:49:40.344Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+4ms","timestamp":"2023-01-30T14:49:40.357Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T14:49:41.152Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T14:49:41.211Z"}
+{"context":"InstanceLoader","level":"info","message":"UserModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T14:49:41.214Z"}
+{"context":"NestMicroservice","level":"info","message":"Nest microservice successfully started","ms":"+1ms","timestamp":"2023-01-30T14:49:41.506Z"}
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+1ms","stack":["Server"],"timestamp":"2023-01-30T14:52:43.795Z"}
+{"err":{"code":320},"level":"error","ms":"+2ms","stack":["Server"],"timestamp":"2023-01-30T14:52:43.800Z"}
