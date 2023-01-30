@@ -11,6 +11,7 @@ import {
 } from 'nest-winston';
 
 import * as DailyRotateFile from 'winston-daily-rotate-file';
+import { AspectLogger } from './interceptors/logging.interceptor';
 
 async function bootstrap() {
   const instance = winston.createLogger({
@@ -51,6 +52,8 @@ async function bootstrap() {
   const rmqService = app.get<RmqService>(RmqService);
   app.connectMicroservice(rmqService.getOptions('FILM'));
   app.useGlobalPipes(new ValidationPipe());
+  // app.useGlobalInterceptors(new AspectLogger());
+
   await app.startAllMicroservices();
 }
 bootstrap();

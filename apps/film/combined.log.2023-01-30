@@ -1,5 +1,23 @@
-{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"abc"},"level":"info","message":"create_film","ms":"+1ms","timestamp":"2023-01-30T14:51:56.337Z"}
-{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"abc"},"level":"info","message":"create film","ms":"+11ms","timestamp":"2023-01-30T14:51:56.349Z"}
-{"level":"info","message":"film list","ms":"+0ms","timestamp":"2023-01-30T14:52:15.970Z"}
-{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+1ms","stack":["Server"],"timestamp":"2023-01-30T14:52:43.820Z"}
-{"err":{"code":320},"level":"error","ms":"+1ms","stack":["Server"],"timestamp":"2023-01-30T14:52:43.822Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"abc"},"level":"info","message":"before....","ms":"+0ms","timestamp":"2023-01-30T16:26:09.650Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"abc"},"level":"info","message":"create film","ms":"+1ms","timestamp":"2023-01-30T16:26:09.658Z"}
+{"level":"info","ms":"+0ms","timestamp":"2023-01-30T16:26:09.833Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"abc"},"level":"info","message":"before....","ms":"+0ms","timestamp":"2023-01-30T16:26:34.779Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"abc"},"level":"info","message":"create film","ms":"+0ms","timestamp":"2023-01-30T16:26:34.780Z"}
+{"level":"info","ms":"+0ms","timestamp":"2023-01-30T16:26:34.794Z"}
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+1ms","stack":["Server"],"timestamp":"2023-01-30T16:27:28.231Z"}
+{"err":{"code":320},"level":"error","ms":"+2ms","stack":["Server"],"timestamp":"2023-01-30T16:27:28.234Z"}
+{"context":"NestFactory","level":"info","message":"Starting Nest application...","ms":"+79ms","timestamp":"2023-01-30T16:27:54.653Z"}
+{"context":"InstanceLoader","level":"info","message":"DatabaseModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T16:27:54.745Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T16:27:54.748Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigHostModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T16:27:54.750Z"}
+{"context":"InstanceLoader","level":"info","message":"ConfigModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T16:27:54.752Z"}
+{"context":"InstanceLoader","level":"info","message":"RmqModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T16:27:54.789Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseCoreModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T16:27:55.242Z"}
+{"context":"InstanceLoader","level":"info","message":"MongooseModule dependencies initialized","ms":"+1ms","timestamp":"2023-01-30T16:27:55.264Z"}
+{"context":"InstanceLoader","level":"info","message":"FilmModule dependencies initialized","ms":"+0ms","timestamp":"2023-01-30T16:27:55.266Z"}
+{"context":"NestMicroservice","level":"info","message":"Nest microservice successfully started","ms":"+1ms","timestamp":"2023-01-30T16:27:55.521Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"abc"},"level":"info","message":"before....","ms":"+0ms","timestamp":"2023-01-30T16:30:06.912Z"}
+{"context":{"actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"abc"},"level":"info","message":"create film","ms":"+0ms","timestamp":"2023-01-30T16:30:06.917Z"}
+{"$__":{"$versionError":null,"activePaths":{"paths":{},"states":{"default":{},"modify":{}}},"backup":{"activePaths":{"default":{"_id":true},"modify":{"actors":true,"director":true,"release_year":true,"title":true}},"validationError":null},"cachedRequired":{},"inserting":true,"op":null,"pathsToScopes":{"actors":{"_id":"63d7f08e9584a29774cdb75b","actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"abc"}},"saveOptions":null,"savedState":{},"saving":null,"validating":null},"$isNew":false,"_doc":{"_id":"63d7f08e9584a29774cdb75b","actors":["abc actor","xyz actor"],"director":"abc","release_year":"2023-12-10","title":"abc"},"level":"info","ms":"+0ms","timestamp":"2023-01-30T16:30:06.954Z"}
+{"level":"error","message":"Disconnected from RMQ. Trying to reconnect.","ms":"+1ms","stack":["Server"],"timestamp":"2023-01-30T16:30:24.983Z"}
+{"err":{"code":320},"level":"error","ms":"+0ms","stack":["Server"],"timestamp":"2023-01-30T16:30:24.984Z"}

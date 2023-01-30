@@ -6,6 +6,8 @@ import * as Joi from 'joi';
 import { DatabaseModule, RmqModule } from '@app/common';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Film, FilmSchema } from './film.schema';
+import { AspectLogger } from './interceptors/logging.interceptor';
+import { APP_INTERCEPTOR } from '@nestjs/core';
 
 @Module({
   imports: [
@@ -23,7 +25,14 @@ import { Film, FilmSchema } from './film.schema';
     MongooseModule.forFeature([{ name: Film.name, schema: FilmSchema }]),
   ],
   controllers: [FilmController],
-  providers: [FilmService, Logger],
+  providers: [
+    FilmService,
+    Logger,
+    // {
+    //   provide: APP_INTERCEPTOR,
+    //   useClass: AspectLogger,
+    // },
+  ],
   exports: [],
 })
 export class FilmModule {}

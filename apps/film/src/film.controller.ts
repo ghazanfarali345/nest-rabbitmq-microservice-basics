@@ -1,4 +1,11 @@
-import { Controller, Get, Post, Body, Logger } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Logger,
+  UseInterceptors,
+} from '@nestjs/common';
 import { FilmService } from './film.service';
 
 import {
@@ -13,7 +20,9 @@ import { FilmDocumentType } from './film.schema';
 import { newFilmDTO } from './dtos/new-film.dto';
 import { existingFilmDTO } from './dtos/update-film.dto';
 import { Types } from 'mongoose';
+import { AspectLogger } from './interceptors/logging.interceptor';
 
+@UseInterceptors(new AspectLogger())
 @Controller()
 export class FilmController {
   constructor(
@@ -31,7 +40,6 @@ export class FilmController {
     @Payload() payload: newFilmDTO,
     // @Ctx() context: RmqContext,
   ): Promise<FilmDocumentType> {
-    this.logger.log('create_film', payload);
     return this.filmService.createFilm(payload);
   }
 
@@ -54,8 +62,6 @@ export class FilmController {
     @Payload() payload: existingFilmDTO,
     // @Ctx() context: RmqContext,
   ): Promise<FilmDocumentType> {
-    this.logger.log('update film', payload);
-
     return this.filmService.updateFilm(payload._id as Types.ObjectId, payload);
   }
 
